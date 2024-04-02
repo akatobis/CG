@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 28vh auto 0;
+    width: 605px;
+}
+
+.letter {
+    margin-right: 50px;
+
+}
+
+.letter:last-child {
+    margin-right: 0;
+}
+
+.letter-M {
+    animation: 2s linear 0s infinite alternate jump;
+}
+
+.letter-A {
+    animation: 1s linear 0s infinite alternate jump;
+}
+
+.letter-E {
+    animation: 0.5s linear 0s infinite alternate jump;
+}
+
+@keyframes jump {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10vh);
+    }
+}

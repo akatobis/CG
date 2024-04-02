@@ -1,0 +1,153 @@
+:root {
+    --color-m: #86307b;
+    --color-a: #7b8630;
+    --color-e: #307B86;
+    --height-letter: 300px;
+    --width-letter: 180px;
+    --width-block-letter: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-left: 300px;
+    margin-top: 150px;
+    display: flex;
+}
+
+.letter {
+    position: relative;
+    width: var(--width-letter);
+    margin-right: 50px;
+}
+
+.letter:last-child {
+    margin-right: 0;
+}
+
+.m {
+    background-color: var(--color-m);
+}
+
+.m1 {
+    width: var(--width-block-letter);
+    height: var(--height-letter);
+}
+
+.m2 {
+    position: absolute;
+    top: -2px;
+    left: 40px;
+    width: var(--width-block-letter);
+    height: var(--height-letter);
+    transform: rotate(-15deg);
+}
+
+.m3 {
+    position: absolute;
+    top: -2px;
+    left: 120px;
+    width: var(--width-block-letter);
+    height: var(--height-letter);
+    transform: rotate(15deg);
+}
+
+.m4 {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    width: var(--width-block-letter);
+    height: var(--height-letter);
+}
+
+.a {
+    background-color: var(--color-a);
+}
+
+.a1 {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: var(--width-block-letter);
+    height: var(--height-letter);
+    transform: rotate(15deg);
+}
+
+.a2 {
+    position: absolute;
+    top: 0;
+    left: 125px;
+    width: var(--width-block-letter);
+    height: var(--height-letter);
+    transform: rotate(-15deg);
+}
+
+.a3 {
+    position: absolute;
+    top: 140px;
+    left: 90px;
+    width: var(--width-block-letter);
+    height: 100px;
+    transform: rotate(90deg);
+}
+
+.e {
+    background-color: var(--color-e);
+}
+
+.e1 {
+    width: var(--width-block-letter);
+    height: var(--height-letter);
+}
+
+.e2 {
+    position: absolute;
+    top: -65px;
+    left: 65px;
+    width: var(--width-block-letter);
+    height: 150px;
+    transform: rotate(90deg);
+}
+
+.e3 {
+    position: absolute;
+    top: 75px;
+    left: 70px;
+    width: var(--width-block-letter);
+    height: 150px;
+    transform: rotate(90deg);
+}
+
+.e4 {
+    position: absolute;
+    top: 220px;
+    left: 65px;
+    width: var(--width-block-letter);
+    height: 150px;
+    transform: rotate(90deg);
+}
+
+.letter-m {
+    animation: 3s linear 0s infinite alternate jump-m;
+}
+
+.letter-a {
+    animation: 2s linear 0s infinite alternate jump-m;
+}
+
+.letter-e {
+    animation: 1s linear 0s infinite alternate jump-m;
+}
+
+@keyframes jump-m {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10vh);
+    }
+}

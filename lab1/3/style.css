@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+
+}
+
+.circle-settings {
+    width: 18%;
+    height: 100vh;
+    padding: 5% 0 0 3%;
+    border-right: 2px solid #575757;
+    z-index: 2;
+}
+
+.circle-settings-elem__title {
+    margin-bottom: 15px;
+}
+
+.circle-settings-elem {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.circle-settings-elem:last-child {
+    margin-bottom: 30px;
+}
+
+.circle-parameter__description {
+    width: 100px;
+}
+
+.circle-color-settings__description {
+    width: 30px;
+}
+
+.circle-settings__input {
+    width: 50px;
+}
+
+.circle-parameters {
+    display: flex;
+    flex-direction: column;
+}
