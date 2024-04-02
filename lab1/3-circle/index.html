@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle-settings">
+            <div class="list-circle-parameters">
+                <h3 class="circle-settings-elem__title">Parameters:</h3>
+                <dd class="circle-settings-elem">
+                    <dl><p class="circle-parameter__description">coordinate x:</p></dl>
+                    <label><input class="circle-settings__input" id="circle-coordinate-x" type="number" required></label>
+                </dd>
+                <dd class="circle-settings-elem">
+                    <dl><p class="circle-parameter__description">coordinate y:</p></dl>
+                    <label><input class="circle-settings__input" id="circle-coordinate-y" type="number" required></label>
+                </dd>
+                <dd class="circle-settings-elem">
+                    <dl><p class="circle-parameter__description">radius:</p></dl>
+                    <label><input class="circle-settings__input" id="circle-radius" type="number" required></label>
+                </dd>
+            </div>
+            <div class="circle-color-settings">
+                <h3 class="circle-settings-elem__title">Color:</h3>
+                <dd class="circle-settings-elem">
+                    <dl><p class="circle-color-settings__description">r:</p></dl>
+                    <label><input class="circle-settings__input" id="circle-color-r" type="number" required></label>
+                </dd>
+                <dd class="circle-settings-elem">
+                    <dl><p class="circle-color-settings__description">g:</p></dl>
+                    <label><input class="circle-settings__input" id="circle-color-g" type="number" required></label>
+                </dd>
+                <dd class="circle-settings-elem">
+                    <dl><p class="circle-color-settings__description">b:</p></dl>
+                    <label><input class="circle-settings__input" id="circle-color-b" type="number" required></label>
+                </dd>
+            </div>
+
+            <button class="button-draw-circle">draw</button>
+        </div>
+    </div>
+</body>
+</html>

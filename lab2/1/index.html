@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<!--курсор оставался стрелкой при наведении на все пункты меню-->
+<body>
+  <header>
+    <nav class="navigation">
+      <ul class="navigation__list_elems">
+        <li class="navigation__elem-container navigation__elem-container_file">
+          <a class="navigation__elem">File</a>
+          <div class="navigation__drop-list navigation__drop-list_file">
+            <ul>
+              <li class="navigation__drop-list-elem-container" id="open-image"><input type="file" id="input-select-image"><a class="navigation__drop-list-elem">Open</a></li>
+              <li class="navigation__drop-list-elem-container" id="new-image"><a class="navigation__drop-list-elem">New</a></li>
+              <li class="navigation__drop-list-elem-container" id="save-image"><a class="navigation__drop-list-elem">Save as</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navigation__elem-container"><a class="navigation__elem">Help</a></li>
+        <li class="navigation__elem-container"><a class="navigation__elem" id="change-draw">Draw</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <section>
+        <div class="download-image-container">
+          <canvas id="download-image" class="download-image" width="0" height="0"></canvas>
+<!--          draggable="true"-->
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<!--при переключении на другое приложении не происходило прилопание к курсору мыши и сделать более красивый рисунок-->
+    <div class="truck" draggable="true">
+        <svg width="815" height="355" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="600" height="300" fill="#FFB02E"/> <--кузов-->
+            <rect x="645" y="75" width="170" height="220" fill="#FFB02E"/> <--кабина-->
+            <rect x="50" y="37" width="472" height="192" fill="#DFB472"/> <--рисунок на кузове-->
+            <rect x="683" y="109" width="100" height="144" stroke-width="3" rx="2" stroke="#494949"/> <--обводка двери-->
+            <rect x="684" y="110" width="95" height="60" rx="2" fill="#FBF9F3"/> <--окно-->
+            <rect x="600" y="160" width="45" height="113" fill="#FFB841"/> <--соединитель кузова-->
+            <rect x="690" y="180" width="10" height="4" rx="2" fill="#494949"/> <--ручка двери-->
+            <circle cx="90" cy="305" r="44" fill="#969696" stroke="black" stroke-width="4"/> <--колесо 1-->
+            <circle cx="485" cy="305" r="44" fill="#969696" stroke="black" stroke-width="4"/> <--колесо 2-->
+            <circle cx="730" cy="305" r="44" fill="#969696" stroke="black" stroke-width="4"/> <--колесо 3-->
+        </svg>
+    </div>
+</body>
+</html>
